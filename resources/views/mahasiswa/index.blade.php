@@ -23,11 +23,11 @@
                         </tr>
                         @foreach ($mahasiswa as $mhs)
                         <tr>
-                            <td>{{$mhs ->id }}</td>
+                            <td>{{$mhs ->id}}</td>
                             <td>{{$mhs ->npm }}</td>
-                            <td>{{$mhs ->nama_mahasiswa }}</td>
+                            <th>{{$mhs ->nama_mahasiswa}}</th>
                             <td>{{$mhs ->tempat_lahir.', '.$mhs ->tgl_lahir }}</td>
-                            <td>{{$mhs ->jenis_kelamin }}</td>
+                            <td>{{$mhs ->jenis_kelamin == 'L' ? 'Laki-Laki' : 'Perempuan' }}</td>
                             <td>{{$mhs ->hp }}</td>
                             <td>{{$mhs ->alamat }}</td>
                             <td>
