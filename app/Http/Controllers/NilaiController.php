@@ -42,7 +42,7 @@ class NilaiController extends Controller
     {
         $nilai = Nilai::find($id);
         $nilai->update($request->all());
-        toast('Data Mata Kuliah Berhasil Di Edit','success');
+        toast('Data Nilai Kuliah Berhasil Di Edit','success');
         return redirect('nilai');
     }
 
@@ -50,7 +50,7 @@ class NilaiController extends Controller
     {
         $nilai = Nilai::find($id);
         $nilai ->delete();
-        toast('Data Mata Kuliah Telah Di Hapus','info');
+        toast('Data Nilai Kuliah Telah Di Hapus','info');
         return redirect('nilai');
     }
 }
